@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\BENC\\Desktop\\ESTUDIO\\AplicativoAIGen\\AplicativoAIGen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB0C0F0-7990-4C6B-928D-F1FAF1B4B439}|AplicativoAIGen\\AplicativoAIGen.csproj|c:\\users\\benc\\desktop\\estudio\\aplicativoaigen\\aplicativoaigen\\aplicativoaigen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FB0C0F0-7990-4C6B-928D-F1FAF1B4B439}|AplicativoAIGen\\AplicativoAIGen.csproj|solutionrelative:aplicativoaigen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FB0C0F0-7990-4C6B-928D-F1FAF1B4B439}|AplicativoAIGen\\AplicativoAIGen.csproj|c:\\users\\benc\\desktop\\estudio\\aplicativoaigen\\aplicativoaigen\\aplicativoaigen\\aplicativoaigen.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9FB0C0F0-7990-4C6B-928D-F1FAF1B4B439}|AplicativoAIGen\\AplicativoAIGen.csproj|solutionrelative:aplicativoaigen\\aplicativoaigen.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AplicativoAIGen.csproj",
+              "DocumentMoniker": "C:\\Users\\BENC\\Desktop\\ESTUDIO\\AplicativoAIGen\\AplicativoAIGen\\AplicativoAIGen\\AplicativoAIGen.csproj",
+              "RelativeDocumentMoniker": "AplicativoAIGen\\AplicativoAIGen.csproj",
+              "ToolTip": "C:\\Users\\BENC\\Desktop\\ESTUDIO\\AplicativoAIGen\\AplicativoAIGen\\AplicativoAIGen\\AplicativoAIGen.csproj",
+              "RelativeToolTip": "AplicativoAIGen\\AplicativoAIGen.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-15T02:41:09.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BENC\\Desktop\\ESTUDIO\\AplicativoAIGen\\AplicativoAIGen\\AplicativoAIGen\\Program.cs",
+              "RelativeDocumentMoniker": "AplicativoAIGen\\Program.cs",
+              "ToolTip": "C:\\Users\\BENC\\Desktop\\ESTUDIO\\AplicativoAIGen\\AplicativoAIGen\\AplicativoAIGen\\Program.cs",
+              "RelativeToolTip": "AplicativoAIGen\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T21:56:25.605Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

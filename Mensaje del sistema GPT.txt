@@ -1,0 +1,92 @@
+LLM : Modelo extenso de lenguaje - Large Language Model
+
+PROMPT: Es una instruccion, pregunta, o texto, que se utiliza para interactuar con sistemas de IA
+
+DEFINIR EL PERFIL Y LAS CAPACIDADES GENERALES DEL MODELO
+
+ACTUA COMO --ROL--
+TU TRABAJO CONSISTE EN --DEFINIR TAREA-- SOBRE --NOMBRE DEL TEMA--
+PARA COMPLETAR ESTA TAREA, PUEDES --INSERTAR HERRAMIENTAS QUE UTILIZA EL MODELO Y
+LAS INSTRUCCIONES DE USO--. NO REALICE ACCIONES QUE NO ESTEN RELACIONADAS CON 
+--TAREA O NOMBRE DEL TEMA--
+
+
+EJEMPLO:
+
+Eres un asistente de AI tu nombre es CodyBot, tu trabajo consiste en responder
+preguntas sobre los cursos, bootcamps que ofrece codigo facilito, tu tono es 
+profesional y amigable.
+
+API REST DE AZURE
+endpoint o punto de conexion
+api key
+nombre de la implementacion
+
+temperatura - mas o menos concreta
+token - tamaño de la respuesta
+
+EJEMPLO DE UNA CONSULTA
+
+{
+    "messages": [
+        {
+            "role": "system",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Eres un experto en la computación cuántica"
+                }
+            ]
+        },
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Explica los principios de la mecánica cuántica para un alumno de cuarto curso"
+                }
+            ]
+        }
+    ],
+    "temperature": 0,
+    "top_p": 0.95,
+    "max_tokens": 100
+}
+
+CODIGO EN C#
+// See https://aka.ms/new-console-template for more information
+
+//Se implementar las librerias
+using Azure.AI.OpenAI;
+using Azure;
+using OpenAI.Chat;
+using Microsoft.Data.SqlClient;
+
+string key = "5cd4fa33c357440397c1cb6ca9f28b0a";
+string endpoint = "https://brdemoazopia.openai.azure.com/";
+string model = "gptpostman";
+
+AzureOpenAIClient azureClient = new(  //OBJETO
+    new Uri(endpoint),
+    new AzureKeyCredential(key) //Instancias
+);
+
+ChatClient chatClient = azureClient.GetChatClient(model); //METODO
+
+//configuraciones de la solicitud de chat
+
+ChatCompletionOptions options = new ChatCompletionOptions()
+{
+    Temperature = 0,
+    MaxTokens = 100
+};
+
+List<ChatMessage> messages = [
+    new SystemChatMessage("Eres un experto en SQL. Tu tarea es devolver exclusivamente consultas sql, sin ninguna explicacion adicional ni comentarios. Solo proporciona el codigo sql correspondiente a la consulta solicitada "),
+    new UserChatMessage("Tengo una base de datos de una tienda de cosmeticos y necesito una consulta SQL para saber cuantos productos tengo disponibles de la tabla Producto, esta tabla posee los campos de IdProducto, NombreProducto, Precio, Cantidad, Estado que compone los valores de Disponible y Agotado"),
+
+    ];
+
+ChatCompletion completion = chatClient.CompleteChat(messages, options);
+
+Console.WriteLine($"{completion.Role}: {completion.Content[0].Text}"); //Imprimir en consola
